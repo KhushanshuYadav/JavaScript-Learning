@@ -11,7 +11,7 @@ function caller1(callbackFunction){
 
 caller1(callback1);
 
-//anonymous callback function arrow function
+//anonymous callback function (arrow function)
 function caller2(callbackFunction){
     console.log("caller2");
     callbackFunction();
@@ -19,6 +19,7 @@ function caller2(callbackFunction){
 
 caller2(  ()=>console.log("callback2")  );
 
+//anonymous callback function (normal function)
 function caller3(callbackFunction){
     console.log("caller3");
     callbackFunction();
