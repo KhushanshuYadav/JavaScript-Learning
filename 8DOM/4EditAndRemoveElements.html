@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+</body>
+<script>
+
+    //TODO: using innerHtml
+    let e=document.querySelector("li:nth-child(2)");
+    e.innerHTML="Item 2 updated";
+
+    //todo: using replaceWith
+    let e2=document.querySelector("li:nth-child(3)");
+    let newEle=document.createElement("li");
+    newEle.textContent="Item 3 updated";
+    e2.replaceWith(newEle);
+
+    //TODO: using outerHTML
+    e2=document.querySelector("li:nth-child(4)");
+    e2.outerHTML="<li>Item 4 updated</li>";
+
+
+
+
+</script>
+</html>

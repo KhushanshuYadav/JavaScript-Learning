@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+
+  </body>
+  <script>
+
+    const title=document.createElement("h1");
+    title.innerText="DOM Learning thru chai or code youtube";
+
+    title.setAttribute("id",1);
+    //title.setAttribute("style.color","red");//this will not work as this method is for setting HTML attributes not css styles
+    title.setAttribute("style","color:red");//this will work
+    //title.setAttribute("text","hiii");
+    document.body.appendChild(title);
+
+    //more optimized;
+
+    const title2=document.createElement("h2");
+    const text=document.createTextNode("DOM Learning thru chai or code youtube2");
+    title2.appendChild(text);
+    document.body.appendChild(title2);
+
+
+
+
+
+    
+    
+  </script>
+</html>
