@@ -31,6 +31,9 @@
     e2=document.querySelector("li:nth-child(4)");
     e2.outerHTML="<li>Item 4 updated</li>";
 
+    e2=document.getElementsByClassName("list");
+    e2[0].lastElementChild.remove();  //will remove item 5
+
 
 
 
